@@ -1,3 +1,124 @@
+// ─── Projects ───────────────────────────────────────────────────────────────
+export interface Project {
+  id: string
+  title: string
+  tagline: string
+  description: string
+  tags: string[]
+  embedUrl: string        // URL to load inside iframe
+  liveUrl: string         // URL for the "Open" redirect button
+  status: 'live' | 'demo' | 'beta'
+}
+
+export const projects: Project[] = [
+  {
+    id: 'magesheet',
+    title: 'MageSheet',
+    tagline: 'Google Sheets meets automation magic',
+    description:
+      'A powerful Google Sheets add-on and web platform that lets non-technical users build automated workflows, dashboards and reports without writing a single line of code. Connect your data, automate tasks and get insights in minutes.',
+    tags: ['Google Sheets', 'Automation', 'No-Code', 'Dashboard'],
+    embedUrl: 'https://magesheet.com/',
+    liveUrl: 'https://magesheet.com/',
+    status: 'live',
+  },
+  {
+    id: 'autoworkflow',
+    title: 'AutoWorkflow',
+    tagline: 'Intelligent process automation for Indian businesses',
+    description:
+      'An end-to-end workflow automation platform built for Indian SMEs. Automate approvals, notifications, data entry and business processes — without expensive enterprise software.',
+    tags: ['Workflow', 'Automation', 'SME', 'SaaS'],
+    embedUrl: 'https://autoworkflow.in/',
+    liveUrl: 'https://autoworkflow.in/',
+    status: 'live',
+  },
+  {
+    id: 'appscript-expert',
+    title: 'Apps Script Expert',
+    tagline: 'Google Workspace automation specialists',
+    description:
+      'A curated resource and service hub for Google Apps Script developers and businesses looking to extend Google Workspace with custom automation, integrations and workflows.',
+    tags: ['Google Apps Script', 'Workspace', 'Automation'],
+    embedUrl: 'https://appscriptexpert.com/',
+    liveUrl: 'https://appscriptexpert.com/',
+    status: 'live',
+  },
+  {
+    id: 'automation-meir',
+    title: 'Automation by Meir',
+    tagline: 'Smart business automation consulting',
+    description:
+      'A consulting platform focused on delivering smart automation solutions for businesses. From CRM automation to email workflows and data pipelines — built with simplicity and ROI in mind.',
+    tags: ['Consulting', 'CRM', 'Email Automation', 'Business'],
+    embedUrl: 'https://www.automationbymeir.com/',
+    liveUrl: 'https://www.automationbymeir.com/',
+    status: 'live',
+  },
+]
+
+// ─── Products ────────────────────────────────────────────────────────────────
+export interface Product {
+  id: string
+  name: string
+  tagline: string
+  category: string
+  status: 'available' | 'coming-soon' | 'beta'
+  icon: string   // emoji or icon name
+}
+
+export const products: Product[] = [
+  {
+    id: 'craftflow',
+    name: 'CraftFlow',
+    tagline: 'Visual workflow builder for teams',
+    category: 'Automation',
+    status: 'coming-soon',
+    icon: '⚡',
+  },
+  {
+    id: 'craftmis',
+    name: 'CraftMIS',
+    tagline: 'Real-time business intelligence, simplified',
+    category: 'Analytics',
+    status: 'beta',
+    icon: '📊',
+  },
+  {
+    id: 'craftdesk',
+    name: 'CraftDesk',
+    tagline: 'Smart helpdesk for growing businesses',
+    category: 'Customer Support',
+    status: 'coming-soon',
+    icon: '🎯',
+  },
+  {
+    id: 'crafterp',
+    name: 'CraftERP',
+    tagline: 'Lightweight ERP built for SMEs',
+    category: 'ERP',
+    status: 'coming-soon',
+    icon: '🏗️',
+  },
+  {
+    id: 'craftform',
+    name: 'CraftForm',
+    tagline: 'Smart forms that connect to your business',
+    category: 'No-Code',
+    status: 'beta',
+    icon: '📝',
+  },
+  {
+    id: 'crafthr',
+    name: 'CraftHR',
+    tagline: 'HR & payroll automation for Indian businesses',
+    category: 'HR Tech',
+    status: 'coming-soon',
+    icon: '👥',
+  },
+]
+
+// ─── Re-export existing ───────────────────────────────────────────────────────
 export const services = [
   {
     id: 'business-consulting',
@@ -113,7 +234,7 @@ export const coreGoals = [
   {
     number: '05',
     title: 'Customized Solutions',
-    description: 'Understand each client\'s business requirements and develop solutions that address actual challenges.',
+    description: "Understand each client's business requirements and develop solutions that address actual challenges.",
   },
   {
     number: '06',
@@ -153,4 +274,3 @@ export const industries = [
   'Real Estate',
   'Professional Services',
 ]
-

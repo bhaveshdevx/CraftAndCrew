@@ -5,14 +5,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 99999 99999',
-    href: 'tel:+919999999999',
+    value: '+91 83697 17181',
+    href: 'tel:+918369717181',
   },
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@craftandcrew.in',
-    href: 'mailto:hello@craftandcrew.in',
+    value: 'business@craftandcrew.in',
+    href: 'mailto:business@craftandcrew.in',
   },
   {
     icon: MapPin,
@@ -149,7 +149,7 @@ export default function Contact() {
                         required
                         value={form.email}
                         onChange={handleChange}
-                        placeholder="john@company.com"
+                        placeholder="business@craftandcrew.in"
                         className="w-full px-4 py-2.5 rounded-lg border border-slate-200 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                       />
                     </div>
