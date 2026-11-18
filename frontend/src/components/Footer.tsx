@@ -46,8 +46,8 @@ export default function Footer() {
                 className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
               >
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/>
-                  <circle cx="4" cy="4" r="2"/>
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                  <circle cx="4" cy="4" r="2" />
                 </svg>
               </a>
               {/* X (Twitter) */}
@@ -57,11 +57,11 @@ export default function Footer() {
                 className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
               >
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                 </svg>
               </a>
               <a
-                href="mailto:hello@craftandcrew.in"
+                href="mailto:business@craftandcrew.in"
                 aria-label="Email"
                 className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
               >
@@ -109,17 +109,17 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-blue-400 shrink-0" />
-                <a href="tel:+919999999999" className="text-sm text-slate-400 hover:text-white transition-colors">
-                  +91 99999 99999
+                <a href="tel:+918369717181" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  +91 83697 17181
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail size={16} className="text-blue-400 shrink-0" />
                 <a
-                  href="mailto:hello@craftandcrew.in"
+                  href="mailto:business@craftandcrew.in"
                   className="text-sm text-slate-400 hover:text-white transition-colors"
                 >
-                  hello@craftandcrew.in
+                  business@craftandcrew.in
                 </a>
               </li>
             </ul>
