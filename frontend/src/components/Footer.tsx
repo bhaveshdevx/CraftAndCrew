@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const quickLinks = [
@@ -35,10 +35,22 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm leading-relaxed text-slate-400 mb-5">
-              We Understand. We Innovate. We Transform. Simplifying business operations through technology, automation
+              We Understand. We Innovate. We Automate. Simplifying business operations through technology, automation
               and consulting.
             </p>
             <div className="flex gap-3">
+              {/* Whatsapp */}
+              <a
+                href="#"
+                aria-label="WhatsApp"
+                className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 flex items-center justify-center transition-colors"
+              >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M20.52 3.48A11.82 11.82 0 0 0 12.04 0C5.48 0 .14 5.34.14 11.9c0 2.1.55 4.15 1.6 5.96L0 24l6.3-1.65a11.9 11.9 0 0 0 5.73 1.46h.01c6.56 0 11.9-5.34 11.9-11.9a11.82 11.82 0 0 0-3.42-8.43ZM12.04 21.8h-.01a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.88 9.88 0 1 1 8.39 4.63Zm5.43-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.8-1.49-1.78-1.67-2.08-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.08 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35Z" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+
               {/* LinkedIn */}
               <a
                 href="#"
@@ -105,11 +117,17 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-blue-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-slate-400">India (Global Operations)</span>
+                <span className="text-sm text-slate-400">Office no 2, Patil Commercial, Manpada Road, Dombivli (E) 421204</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone size={16} className="text-blue-400 shrink-0" />
                 <a href="tel:+918369717181" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  +91 83697 17181
+                </a>
+              </li>
+              <li className="flex items-center gap-3">
+                <MessageCircle size={16} className="text-blue-400 shrink-0" />
+                <a href="https://wa.me/918369717181?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." className="text-sm text-slate-400 hover:text-white transition-colors">
                   +91 83697 17181
                 </a>
               </li>
@@ -130,7 +148,7 @@ export default function Footer() {
           <p className="text-xs text-slate-500">
             © {new Date().getFullYear()} Craft & Crew. All rights reserved.
           </p>
-          <p className="text-xs text-slate-500">We Understand. We Innovate. We Transform.</p>
+          <p className="text-xs text-slate-500">We Understand. We Innovate. We Automate.</p>
         </div>
       </div>
     </footer>

@@ -244,24 +244,24 @@ export const coreGoals = [
 ]
 
 export const testimonials = [
-  {
-    name: 'Rahul Mehta',
-    role: 'CEO, RetailEdge India',
-    quote:
-      'Craft & Crew transformed our operations completely. What used to take days now happens in hours. Their understanding of our business was exceptional.',
-  },
-  {
-    name: 'Priya Sharma',
-    role: 'Director, FinServe Solutions',
-    quote:
-      'The MIS dashboard they built gives us real-time clarity across all branches. We finally have the data to make confident decisions.',
-  },
-  {
-    name: 'Amit Patel',
-    role: 'Founder, LogiStart',
-    quote:
-      'As a startup, we needed affordable, scalable solutions. Craft & Crew delivered beyond expectations — on time and within budget.',
-  },
+  // {
+  //   name: 'Rahul Mehta',
+  //   role: 'CEO, RetailEdge India',
+  //   quote:
+  //     'Craft & Crew transformed our operations completely. What used to take days now happens in hours. Their understanding of our business was exceptional.',
+  // },
+  // {
+  //   name: 'Priya Sharma',
+  //   role: 'Director, FinServe Solutions',
+  //   quote:
+  //     'The MIS dashboard they built gives us real-time clarity across all branches. We finally have the data to make confident decisions.',
+  // },
+  // {
+  //   name: 'Amit Patel',
+  //   role: 'Founder, LogiStart',
+  //   quote:
+  //     'As a startup, we needed affordable, scalable solutions. Craft & Crew delivered beyond expectations — on time and within budget.',
+  // },
 ]
 
 export const industries = [

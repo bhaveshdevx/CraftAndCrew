@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Send, CheckCircle2 } from 'lucide-react'
+import { Mail, MapPin, Phone, Send, CheckCircle2, MessageCircle } from 'lucide-react'
 import { useState } from 'react'
 
 const contactInfo = [
@@ -17,9 +17,15 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Location',
-    value: 'India (Global Operations)',
+    value: 'Office no 2, Patil Commercial, Manpada Road, Dombivli (E) 421204',
     href: '#',
   },
+  {
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    value: '+91 83697 17181',
+    href: 'https://wa.me/+918369717181?text=Hello%2C%20I%20am%20interested%20in%20your%20services.%20I%20would%20like%20to%20know%20more%20about%20your%20website%20design%20services.%20Thank%20you.',
+  }
 ]
 
 export default function Contact() {
@@ -69,11 +75,11 @@ export default function Contact() {
             <div className="lg:col-span-2">
               <h2 className="text-xl font-bold text-slate-900 mb-6">Get in Touch</h2>
 
-              <div className="space-y-5 mb-10">
+              <div className="space-y-5 mb-6">
                 {contactInfo.map((info) => {
                   const Icon = info.icon
                   return (
-                    <div key={info.label} className="flex items-start gap-4">
+                    <div key={info.label} className="flex items-start gap-4 mb-4.5">
                       <div className="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
                         <Icon size={18} className="text-blue-600" />
                       </div>

@@ -50,12 +50,15 @@ export default function Home() {
               <br />
               We <span className="text-gradient">Innovate.</span>
               <br />
-              We <span className="text-gradient">Transform.</span>
+              We <span className="text-gradient">Automate.</span>
             </h1>
 
             <p className="text-lg text-slate-500 leading-relaxed mb-8 max-w-xl">
               Craft & Crew simplifies business operations by combining technology, automation, analytics and
-              consulting — delivering practical, scalable solutions for businesses worldwide.
+              consulting — delivering practical, scalable solutions for businesses.
+              <p>
+                <b>Customize ERP | Website | Mobile Application | Analytical Dashboard.</b>
+              </p>
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -194,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* ── Testimonials ── */}
-      <section className="bg-white section-padding">
+      {/* <section className="bg-white section-padding">
         <div className="container-max">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <p className="text-xs font-semibold text-blue-600 uppercase tracking-widest mb-3">Client Stories</p>
@@ -215,7 +218,9 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <br />
 
       {/* ── CTA ── */}
       <section className="bg-blue-600 section-padding">
