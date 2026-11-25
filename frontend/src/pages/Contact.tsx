@@ -1,5 +1,8 @@
 import { Mail, MapPin, Phone, Send, CheckCircle2, MessageCircle } from 'lucide-react'
 import { useState } from 'react'
+const GOOGLE_SCRIPT_URL = import.meta.env.VITE_GOOGLE_SCRIPT_URL;
+
+
 
 const contactInfo = [
   {
@@ -42,11 +45,40 @@ export default function Contact() {
     setForm({ ...form, [e.target.name]: e.target.value })
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you'd wire up your backend / email service
-    setSubmitted(true)
-  }
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    console.log(GOOGLE_SCRIPT_URL)
+
+
+    try {
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: "POST",
+        mode: "no-cors",
+        body: new URLSearchParams({
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          service: form.service,
+          message: form.message,
+        }),
+      });
+
+      setSubmitted(true);
+
+      setForm({
+        name: "",
+        email: "",
+        company: "",
+        service: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.error("Submission failed:", error);
+      alert("Something went wrong. Please try again.");
+    }
+  };
 
   return (
     <main className="pt-20">
