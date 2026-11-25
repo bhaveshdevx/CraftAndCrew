@@ -9,8 +9,8 @@ import {
   Zap,
 } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { services, stats, whyUs, testimonials } from '../data/content'
-
+import { services, stats, whyUs } from '../data/content'
+// import { testimonials } from '../data/content'
 const iconMap: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
   Briefcase,
   Code2,
